@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\inicioDeSesion.css" type="text/css"/>
+    <title>Inicia Sesión</title>
+
+   <!---------------------------FUENTES-------------------------------->
+
+    <!-- Zen Old Mincho-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
+    <!-- Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    
+    <!-- Open Sans Condensed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway:wght@900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+   <!------------------------------------------------------------------>
+</head>
+
+<body>
+	<div class="container">
+     <div class="loginContainer">
+       <div class="inicioDeSesion">
+         <h2>¡Bienvenid@!</h2>
+         <form action="" class="formulario" id="formulario">
+
+           <label>No. de boleta o empleado</label>
+           <input type="text" class="texto" id="numero" required="">
+
+           <label>Contraseña</label>
+           <input type="password" class="texto" id="pass" required="" >
+
+           <input type="submit" class="boton1" value="Iniciar Sesión">
+           <a href="registro.html"><input type="button" class="boton2" value="Registrarse"></a>
+
+           <p class="advertencia" id="advertencia"></p>
+         </form>
+       </div>
+       <div class="login">
+       		<img src="assets/img/login.png">
+       </div>
+     </div>
+   </div>
+
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--Esto es una libreria para las alertas-->
+   <script type="text/javascript" src="js/validarLogin.js"></script>
+</body>
+</html>

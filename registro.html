@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f1fe361482.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css\registro.css" type="text/css"/>
+    <title>Registro</title>
+
+     <!---------------------------FUENTES-------------------------------->
+
+    <!-- Zen Old Mincho-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
+    <!-- Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    
+    <!-- Open Sans Condensed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway:wght@900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+   <!------------------------------------------------------------------>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="singUpContainer">
+          <div class="registro">
+            <h2>¡Bienvenid@!</h2>
+            <form action="" class="formulario" id="formulario">
+              
+              <div class="selectbox">
+                <div class="select" id="select">
+                  <div class="contenido-select">
+                    <h3 class="titulo">Selecciona tu tipo de usuario</h3>
+                  </div>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+
+                <div class="opciones" id="opciones">
+
+                  <a href="#" class="opcion">
+                    <div class="contenido-opcion">
+                        <h4 class="titulo">Alumno</h4>
+                    </div>
+                  </a>
+
+                  <a href="#" class="opcion">
+                    <div class="contenido-opcion">
+                        <h4 class="titulo">Profesores</h4>
+                    </div>
+                  </a>
+
+                  <a href="#" class="opcion">
+                    <div class="contenido-opcion">
+                        <h4 class="titulo">Personal de Intendencia</h4>
+                    </div>
+                  </a>
+
+                  <a href="#" class="opcion">
+                    <div class="contenido-opcion">
+                        <h4 class="titulo">Personal Administrativo</h4>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+
+              <input type="hidden" name="tipoUsuario" id="inputSelect" value="">
+
+              <label>No. de boleta o empleado</label>
+              <input type="text" class="texto" id="id" placeholder="Ejem: 2020780384" required="">
+
+              <label>Nombre(s)</label>
+              <input type="text" class="texto" id="nombre" placeholder="Ejem: Fernando Daniel" required="">
+
+              <label>Apellido Paterno</label>
+              <input type="text" class="texto" id="apPater" placeholder="Ejem: Cervantes" required="">
+
+              <label>Apellido Materno</label>
+              <input type="text" class="texto" id="apMater" placeholder="Ejem: Reyes" required="">
+
+              <label>Correo Electronico</label>
+              <input type="email" class="texto" id="email" placeholder="Ejem: rugrill.notification@gmail.com" required="">
+   
+              <label>Contraseña</label>
+              <input type="password" class="texto" id="pass"  placeholder="Deben de ser minimo 8 caracteres" required="" >
+   
+              <input type="submit" class="boton1" value="Registrarse">
+              <a href="inicioDeSesion.html"><input type="button" class="boton1" value="Iniciar Sesión"></a>
+              <a href="#"><input type="button" class="boton2" value="      Inicio      "></a>
+              <a href="registroPadres.html" class="advertencia">Si eres Padre de familia o tutor registrate aquí</a> 
+            </form>
+          </div>
+          <div class="singUp">
+                  <img src="assets/img/singUp.png">
+          </div>
+        </div>
+      </div>
+   
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--Esto es una libreria para las alertas-->
+      <script type="text/javascript" src="js/validarSingUp.js"></script>
+</body>
+</html>

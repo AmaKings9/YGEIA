@@ -1,0 +1,151 @@
+/* Aquí puedes escribir tu comentario */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: #FFFFFF;
+
+ }
+
+ body{
+   background: #E3F5FF;
+ }
+
+ .container{
+   width: 100%;
+   height: 100vh;
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 7px 13px 37px #000;
+ }
+
+ .loginContainer{
+   display: flex;
+   width: 900px;
+   height: auto;
+   background: #fff;
+   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+ }
+
+ .inicioDeSesion, .login{
+   flex: 1;
+ }
+
+ .inicioDeSesion{
+   padding: 40px;
+   position: relative;
+   background-image: linear-gradient(to bottom right, #4DC1DC, #4DC1DC);
+   padding: 40px;
+   border-radius: 4px;
+ }
+
+ .inicioDeSesion h2{
+   font-size: 35px;
+   font-family: 'Raleway', sans-serif;
+
+ }
+
+ .inicioDeSesion form .texto{
+   width: 100%;
+   background: #4DC1DC;
+   padding: 8px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   border: 1px solid #40A4BB;
+   font-family: 'Open Sans Condensed', sans-serif;
+   color: white;
+
+ }
+
+  label{
+   font-family: 'Open Sans Condensed', sans-serif;
+
+ }
+
+ .login{
+   background-image: linear-gradient(to bottom right, #ffff, #ffff);
+   padding: 40px;
+ }
+
+form .boton1{
+  border-radius: 50px;
+  background: #f5b923;
+  padding: 9px;
+  border: none;
+  margin: 10px;
+  font-weight: bold;
+ }
+
+form .boton2{
+  border-radius: 50px;
+  background: #93CDFF;
+  padding: 9px;
+  border: none;
+  margin: 10px;
+  font-weight: bold;
+
+ }
+
+ .login{
+ 		padding-top: 65px;
+ }
+
+ img{
+ 	width: 110%;
+ 	display: block;
+ 	margin: auto;
+ }
+
+  .inicioDeSesion form .texto:hover{
+   border-color: #ffffff;
+ }
+
+ form .boton1:hover{
+  background: #e47b19;
+ }
+
+form .boton2:hover{
+  background: #019790;
+ }
+
+ .advertencia{
+ 	width: 200px;
+ 	text-align: center;
+ 	margin: auto;
+ 	color: #FBB593;
+ 	padding-top: 20px;
+ }
+
+.input{
+  border-color: #E3F5FF;
+}
+
+ .alertTitulo{
+  font-size: 35px;
+  font-family: 'Raleway', sans-serif;
+ }
+
+ .alertText{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+ }
+
+
+ @media only screen and (max-width: 540px){
+   .loginContainer{
+     display: block;
+   }
+
+   .inicioDeSesion, .login{
+     flex: none;
+   }
+
+   .inicioDeSesion::after{
+     top: unset;
+     bottom: -25px;
+     left: 50%;
+     transform: translateX(-50%) rotate(90deg);
+   }
+ }

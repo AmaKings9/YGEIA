@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="css/formulario.css">
+	<script src="https://kit.fontawesome.com/2f789264ca.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!---------------------------FUENTES-------------------------------->
+
+    <!-- Zen Old Mincho-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
+    <!-- Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    
+    <!-- Open Sans Condensed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway:wght@900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+   <!------------------------------------------------------------------>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+		<div class="btMenu"></div>
+			<div class="logo">
+				<h1>YGEÍA</h1>
+			</div>
+			<nav class="barra">
+				<h2>AVISO DE INFECTADOS</h2>
+			</nav>
+		</div>
+	</header>
+<!--	--------------->
+<div class="containerMenu">
+		<nav  class="contMenu">
+			<a href="#">Inicio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home" id="i"></i></a>
+			<a href="#">Notificaciones<i class="fas fa-bell" id="i"></i></a>
+			<a href="avisoInfectado.html">Aviso de Infectado <i class="fas fa-exclamation-triangle" id="iUno"></i></a>
+		</nav>
+
+		<div class="titulo">
+				<h3>Formulario</h3>
+		</div>
+
+		<div class="contenido">
+			<form action="" class="formulario" id="formulario">
+
+	           <label class="text">No. de boleta o empleado</label>
+	           <input type="text"  required="" class="input" id="id">
+
+	           <label class="text">No. de Teléfono</label>
+	           <input type="tel" required="" class="input" id="tel">
+
+	           <label class="text">Correo Eléctronico</label>
+	           <input type="email"  required="" class="input" id="email">
+
+	           <label class="text">¿Cuáles de los siguientes síntomas presentas?</label>
+	           <fieldset>
+	        		<label class="radio">
+	            			<input type="radio" > Fiebre
+	        		</label>
+	       			<label class="radio">
+	            			<input type="radio" > Tos y/o estornudos
+	        		</label>
+	       			<label class="radio">
+	            			<input type="radio" > Cefalea(Dolor de cabeza)
+	       			</label>
+
+	       			<label class="radio">
+	            			<input type="radio" > Dificultad para respirar
+	       			</label>
+
+	       			<label class="radio">
+	            			<input type="radio" > Pérdida de olfato/gusto
+	       			</label>
+
+	       			<label class="radio">
+	            			<input type="radio" > Vómito
+	       			</label>
+
+	       			<label class="radio">
+	            			<input type="radio" > Dolor Muscular o de articulaciones
+	       			</label>
+	    		</fieldset>
+	    		<br>
+	    		<br>
+
+	    		<label class="text">Adjunta tu archivo PDF de tu prueba COVID</label>
+	    		<br>
+	    		<br>
+	    		<input type="file" id="archivoInput" class="archivo" onchange="return validarExt()" required="" />
+				<br><br>
+				<div id="visorArchivo"></div>
+
+
+	    		<p class="nota">Nota: si por alguna razón no pudieras realizarte la prueba, envía una carta en la que expliques tu situación, firmada por ti y tu tutor.</p>
+	          
+
+	           <input type="submit" class="boton1" value="Enviar">
+	           
+	           <p class="advertencia" id="advertencia"></p>
+         	</form>
+		</div>
+</div>
+
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script type="text/javascript" src="js/validarFormulario.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+	/*Encabezado*/
+.header{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;left: 0;
+	background: #4DC1DC;
+	display: inline;
+	z-index: 100000;
+}
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+.container .btnMenu, .logo{
+	float: left;
+	line-height:100px;
+	z-index: 10000;
+}
+.logo h1{
+	color: #fff;
+	font-weight: 100;
+	font-size: 22px;
+	margin-left: 10%;
+	font-family: 'Zen Maru Gothic', sans-serif;
+	display: inline-block;
+}
+.barra h2{
+	color: #ffffff;
+	font-family: 'Releway', sans-serif;
+	margin-left: -125%;
+}
+.barra{
+	float: right;
+	line-height: 100px;
+}
+.barra a{
+	display: inline-block;
+	padding: 15px;
+	line-height: normal;
+	text-decoration: none;
+	color: #ffffff;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid transparent;
+	font-size: 15px;
+	margin-right: 5px;
+}
+.barra a:hover{
+	border-bottom: 2px solid #c7c7c7;
+	padding-bottom: 5px;
+}
+	/**********************/
+	
+
+	/*Lateral*/
+#btnMenu{
+	display: none;
+	background: #4DC1DC;
+}
+.containerMenu{
+	position: absolute;
+	top: 0;left: 0;
+	transition: all 500ms ease;
+	float: left;
+  |width: 150px;
+}
+.contMenu{
+	position: fixed;
+	width: 130%;
+	max-width: 250px;
+	background: #175462;
+	height: 100%;
+}
+.contMenu{
+	transform: translateY(15%);
+	padding-top: 2%;
+}
+.contMenu a{
+	display: block;
+	text-decoration: none;
+	padding: 30px;
+	color: #c7c7c7;
+	border-left: 5px solid transparent;
+	transition: all 400ms ease;
+}
+.contMenu a:hover{
+	border-left: 5px solid #1892AD;
+	background: #0F414C;
+}
+	#iUno{
+	margin-left: 22%;
+}
+	#i{
+	margin-left:40%;
+}
+
+	/**************************/
+
+/*Formulario*/
+.contenido {
+	width: 70%;
+	height: 100vh;
+	margin-left: 300px;
+	margin-top: 100px;
+	margin-right: 50px;
+}
+
+
+.titulo{
+    padding-left: 52%;
+    padding-top: 12%;
+}
+
+.titulo h3{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+   	color: #FBB593;
+   	font-size: 30px;
+   	position: absolute;
+}
+
+form{
+	padding-right: 2%;
+}
+
+form .text{
+	width: 100%;
+	margin: 5%;
+	color: #175462;
+	font-size: 25px;
+
+}
+
+.radio{
+	display: block;
+	color: #175462;
+	font-size: 19px;
+	padding-top: 1%;
+}
+
+fieldset{
+	margin-left: 5%;
+	border: 0;
+	padding-top: 2%;
+}
+
+.boton1{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 45%;
+	font-family: 'Releway', sans-serif; 
+	color: #318aac !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-color: #318aac;
+    transition: all 1s ease;
+    position: relative;
+    border-radius: 50px;
+}
+
+.boton1:hover{
+	color: rgba(255, 255, 255, 0.9) !important;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 0.5em 1.2em;
+	background: #318aac;
+	border: 2px solid;
+	border-color: #318aac;
+}
+
+
+.archivo{
+	margin-left: 5%;
+	font-weight: bold;
+	color: #175462;
+	font-size: 16px;
+}
+
+.nota{
+	margin-top: 4%;
+	margin-left: 5%;
+	color: #D61818;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+
+.input{
+	width: 100%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2%;
+	margin-bottom: 4%;
+	color: #175462;
+	font-size: 25px;
+	border: 3px solid #40A4BB;
+   	font-family: 'Open Sans Condensed', sans-serif;
+   	color: #175462;
+}		
+/******************************/
