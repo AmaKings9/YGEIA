@@ -79,18 +79,60 @@ function agregarNoti(day, month, year){
     document.getElementById("notificacion").appendChild(elemento);
 }
 
+function agregarNotiName(name, lastName1, lastName2, day, month, year){
+    this.lastName1 = lastName1;
+    this.lastName2 = lastName2;
+    this.name = name;
+    this.day = day;
+    this.month = month;
+    this.year = year;
+    var elemento = document.createElement("div");
+
+    elemento.innerHTML= `<div class="tarjeta">
+    <i class="fas fa-exclamation-circle warningIcon"></i>
+    <h4 class="textNotifi">Has estado en contacto con una persona infectada</h4>
+    <h4 class="textName">Persona contagiada: <br /> `+ name + ` ` +lastName1 + ` ` + lastName2 + `</h4>
+    <h4 class="textDate">Fecha: `+ day +`/`+ month +`/`+ year +`</h4>
+    <i class="fas fa-trash-alt trashIconName"></i>
+    </div>` ;
+    document.getElementById("notificacion").appendChild(elemento);
+}
+
+function agregarNotiAdmin(name, lastName1, lastName2, day, month, year){
+    this.lastName1 = lastName1;
+    this.lastName2 = lastName2;
+    this.name = name;
+    this.day = day;
+    this.month = month;
+    this.year = year;
+    var elemento = document.createElement("div");
+
+    elemento.innerHTML= `<div class="tarjeta">
+    <i class="fas fa-envelope-open-text infoIcon"></i>
+    <h4 class="textNotifi">Has recibido un formulario de infectado</h4>
+    <h4 class="textName">Enviado por: <br /> `+ name + ` ` +lastName1 + ` ` + lastName2 + `</h4>
+    <h4 class="textDate">Fecha: `+ day +`/`+ month +`/`+ year +`</h4>
+    <i class="fas fa-trash-alt trashIconName"></i>
+    </div>` ;
+    document.getElementById("notificacion").appendChild(elemento);
+}
+
 var opc = true;
 
 if (opc == true){
     agregarNoti("15","06","2021");
-    agregarNoti("15","06","2021");
-    agregarNoti("15","06","2021");
-    agregarNoti("15","06","2021");
+    agregarNotiName("Fernando", "Mendoza", "Gonzalez", "05","12","2011");
+    agregarNotiAdmin("Fernando", "Mendoza", "Gonzalez", "05","12","2011");
 }
 
 //El boton de Borrar Notificacion
 var trashIcon = document.getElementById("trashIcon");
 trashIcon.addEventListener("click", borrarNotifi);
+
+var trashIconName = document.querySelectorAll(".trashIconName");
+for (var i = 0; i < trashIconName.length; i++) {
+    trashIconName[i].addEventListener("click", borrarNotifi);
+}
 
 function borrarNotifi(){
     Swal.fire({
