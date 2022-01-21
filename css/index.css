@@ -2,13 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 body{
-    font-family: 'Open Sans Condensed', sans-serif;
-    background: url(/assets/img/batizFondo.png);
-    background-size: cover;
-    
+    min-height: 100vh;
 }
 
 .nav{
@@ -66,16 +64,25 @@ body{
     border-radius: 15px;
 }
 
-.main{
+.fondo{
+    
+    background: url(/assets/img/Fondo1.png);
+    background-size: cover;
+    border-bottom: #6f1d46 solid 12px;
+    border-style:groove;
+}
+
+
+
+.mainFondo{
     display: grid;
     grid-template-columns: 0.9fr 1fr;
     background: none;
-    height: 100vh;
     transition: all 0.5s ease;
 }
 
 .left{
-    background: #ddf1f1b0;
+    background: #f1f1f1;
     place-items: center;
     justify-content: center;
     text-align: center;
@@ -97,118 +104,227 @@ body{
     background: none;
 }
 
-/*
-.container{
-    width: 100%;
-    height: 100vh;
+.infoCovid{
+    padding: 50px 150px 50px 80px;
 }
 
-.main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: none;
-    height: 100vh;
-    transition: all 0.5s ease;
+.targetaInfoCovid{
+    width: 800px;
+    margin-top: 10px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    align-items: center;
 }
 
-.mainMove{
-    padding-top: 100px;
+.titiloInfoCovid{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(111, 29, 70);
+    font-size: 30px;
+    padding-bottom: 15px;
 }
 
-.left{
-    background: #ddf1f1b0;
-    display: flex;
-    place-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 100px 50px;
-}
-
-.left h1{
-    text-align: left;
-    font-size: 70px;
-}
-
-.left p{
-    font-size: 25px;
+.textoInfoCovid{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
     text-align: justify;
 }
 
-.right{
-    background: none;
+ul.textoInfoCovid{
+    margin-top: 15px;
 }
 
-.nav{
-    position: fixed;
-    width: 100%;
-    background: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
-    transition: all 0.5s ease;
-    background: none;
+.imgCuadroInfoCovid{
+    display: block;
+    width: 280px;
+    height: 280px;
+    margin: auto;
+    margin-top: 30px;
+    background: #6f1d46;
+    border-radius: 10px;
+    transition: .5s ease;
+    border:  #cbe6d7 solid 12px;
 }
 
-.nav.active{
-    background: #000;
-    padding: 15px;
+.imgRectanInfoCovid{
+    display: block;
+    width: 620px;
+    height: 320px;
+    margin: auto;
+    margin-top: 30px;
+    background: #6f1d46;
+    border-radius: 10px;
+    transition: .5s ease;
+    border: #cbe6d7 solid 12px;
 }
 
-.nav.active .navName,
-.nav.active a{
-    color: #fff;
+.mapaSemaforo{
+    display: block;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #cbe6d7;
+    border-radius: 10px;
 }
 
-.nav.active a:hover{
-    background: #fff;
-    color: #000;
+.casosTotalesMapa{
+    display: block;
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    border: #cbe6d7 solid 10px;
+    border-radius: 5px;
 }
 
-.navName{
-    display: flex;
-    font-size: 30px;
-    margin-left: 100px;
-    color: #fff;
-    font-weight: 100;
-    align-items: center;
-    font-family: 'Zen Maru Gothic', sans-serif;
+
+.gobMex{
+    display: block;
+    width: 360px;
+    height: auto;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: .4s ease;
 }
 
-.logo{
-    margin-left: 20px;
-    font-size: 20px;
+.gobMex:hover{
+    width: 400px;
+    height: auto;
+
 }
 
-.menu{
-    display: flex;
-    margin-right: 50px;
+.tituloLinkInfo{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(29, 95, 111);
+    font-size: 25px;
+    padding-bottom: 15px;
+    text-align: center;
 }
 
-.menu li{
-    list-style: none;
-    margin: 10px;
+.flechaAbajo{
+    color: rgb(29, 95, 111);
+    font-size: 50px;
+    margin-left: 48%;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.menu li a{
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    border-radius: 15px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
+/*-----------Footer------------*/
 
-.menu li a:hover{
-    padding: 5px 10px;
-    background: #fff;
-    color: #000;
-    border-radius: 15px;
+.footerAnimado{
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 footer{
-    height: 70px;
+    margin-top: 150px;
+    position: relative;
+    display: flex;
     width: 100%;
-    background: #000;
-    color: #fff;
+    background: #6f1d46;
+    min-height: 100px;
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-*/
+
+footer .social_icon, footer .menu2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social_icon li, footer .menu2 li{
+    list-style: none;
+}
+
+footer .social_icon li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+}
+
+footer .menu2 li a{
+    font-size: 1.3em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: bolder;
+}
+
+footer .menu2 li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(/assets/img/wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 2s linear infinite;
+}
+
+footer .wave#wave2{
+    z-index: 1100;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+footer .wave#wave3{
+    z-index: 1200;
+    opacity: 0.25;
+    bottom: 10px;
+    animation: animateWave_02 1.8s linear infinite;
+}
+
+@keyframes animateWave {
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
