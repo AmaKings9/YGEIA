@@ -1,166 +1,203 @@
 *{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    font-family: 'Open Sans Condensed', sans-serif; 
 }
 
-	/*Encabezado*/
-.header{
-	width: 100%;
-	height: 100px;
-	position: fixed;
-	top: 0;left: 0;
-	background: #4DC1DC;
-	display: inline;
-	z-index: 100000;
+h4{
+    font-family: 'Raleway', sans-serif;
 }
+
+.nameMenu{
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 50px;
+}
+
+body{
+    margin-left: 80px !important;
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86) !important;
+}
+
+header{
+    width: 100% !important;
+    height: 80px !important;
+    background: #4dc1dc;
+    display: flex !important;
+    align-items: center !important;
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 200 !important;
+}
+
+.iconMenu{
+    width: 50px;
+    height: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(10px)!important;
+}
+
+.iconMenu i{
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+}
+
+.menuSide{
+    width: 80px !important;
+    height: 100% !important;
+    background: #175462;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 20px;
+    z-index: 300 !important;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 20px solid #175462;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/*Ocultar scroll para chrome, safari y opera*/
+.menuSide::-webkit-scrollbar{
+    display: none;
+}
+/*Ocultar scroll para IE, Firefox y Edge*/
+.menuSide{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.namePage{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    margin-top: 0px;
+}
+
+.namePage i{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.optionsMenu{
+    margin-top: 20px !important;
+    padding: 20px 30px !important;
+    position: absolute !important;
+    top: 80px !important;
+}
+
+.optionsMenu a{
+    color: #ffffffb2;
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+}
+
+.optionsMenu a:hover{
+    color: white;
+}
+
+.optionsMenu .option{
+    padding: 50px 0px !important;
+    display: flex !important;
+    align-items: center !important;
+    position: relative !important;
+}
+
+.optionsMenu .option i{
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.optionsMenu .option h4{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+a.selected{
+    color: white !important;
+}
+
+.selected:before{
+    content: '';
+    width: 3px;
+    height: 40%;
+    background: white;
+    position: absolute;
+    margin-top: 27px;
+    top: 10%;
+    left: -30px;
+}
+
+
+
+/*-----------------------------CONTENIDO---------------------------------*/
+.box{
+    height: 160px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container{
-	width: 90%;
-	max-width: 1200px;
-	margin: auto;
+    width: 50% !important;
+    margin: 5% 10% 10% 10%;
 }
-.container .btnMenu, .logo{
-	float: left;
-	line-height:100px;
-	z-index: 10000;
-}
-.logo h1{
-	color: #fff;
-	font-weight: 100;
-	font-size: 22px;
-	margin-left: 10%;
-	font-family: 'Zen Maru Gothic', sans-serif;
-	display: inline-block;
-}
-.barra h2{
-	color: #ffffff;
-	font-family: 'Releway', sans-serif;
-	margin-left: -125%;
-}
-.barra{
-	float: right;
-	line-height: 100px;
-}
-.barra a{
-	display: inline-block;
-	padding: 15px;
-	line-height: normal;
-	text-decoration: none;
-	color: #ffffff;
-	transition: all 0.3s ease;
-	border-bottom: 2px solid transparent;
-	font-size: 15px;
-	margin-right: 5px;
-}
-.barra a:hover{
-	border-bottom: 2px solid #c7c7c7;
-	padding-bottom: 5px;
-}
-	/**********************/
-	
-
-	/*Lateral*/
-#btnMenu{
-	display: none;
-	background: #4DC1DC;
-}
-.containerMenu{
-	position: absolute;
-	top: 0;left: 0;
-	transition: all 500ms ease;
-	float: left;
-  |width: 150px;
-}
-.contMenu{
-	position: fixed;
-	width: 130%;
-	max-width: 250px;
-	background: #175462;
-	height: 100%;
-}
-.contMenu{
-	transform: translateY(15%);
-	padding-top: 2%;
-}
-.contMenu a{
-	display: block;
-	text-decoration: none;
-	padding: 30px;
-	color: #c7c7c7;
-	border-left: 5px solid transparent;
-	transition: all 400ms ease;
-}
-.contMenu a:hover{
-	border-left: 5px solid #1892AD;
-	background: #0F414C;
-}
-	#iUno{
-	margin-left: 22%;
-}
-	#i{
-	margin-left:40%;
+.text, .input{
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
-	/**************************/
-
-/*Formulario*/
-.contenido {
-	width: 70%;
-	height: 100vh;
-	margin-left: 300px;
-	margin-top: 100px;
-	margin-right: 50px;
+.input{
+    outline: 0;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    background: #f2f2f2;
+    font-size: 14px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.text1{
+    margin-top: 1%;
+    margin-bottom: 0;
 }
 
-
-.titulo{
-    padding-left: 52%;
-    padding-top: 12%;
+#archivoInput{
+    font-size: 1.25em;
+    color: white;
+    background-color: #175462;
+    display: inline-block;
 }
 
-.titulo h3{
-	text-align: center;
-	font-family: 'Raleway', sans-serif;
-   	color: #FBB593;
-   	font-size: 30px;
-   	position: absolute;
+.nota{
+    color: #175462;
+    font-size: 20px;
 }
 
-form{
-	padding-right: 2%;
-}
-
-form .text{
-	width: 100%;
-	margin: 5%;
-	color: #175462;
-	font-size: 25px;
-
-}
-
-.radio{
-	display: block;
-	color: #175462;
-	font-size: 19px;
-	padding-top: 1%;
-}
-
-fieldset{
-	margin-left: 5%;
-	border: 0;
-	padding-top: 2%;
+.boton{
+    height: 80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .boton1{
-	margin-top: 5%;
-	margin-bottom: 5%;
-	margin-left: 45%;
-	font-family: 'Releway', sans-serif; 
-	color: #318aac !important;
-    font-size: 20px;
+    font-family: 'Releway', sans-serif; 
+    color: #318aac !important;
+    font-size: 19px;
     font-weight: 500;
-    padding: 0.5em 1.2em;
+    padding: 0.3em 1em;
     background: rgba(0,0,0,0);
     border: 2px solid;
     border-color: #318aac;
@@ -170,43 +207,83 @@ fieldset{
 }
 
 .boton1:hover{
-	color: rgba(255, 255, 255, 0.9) !important;
-	font-size: 20px;
-	font-weight: 500;
-	padding: 0.5em 1.2em;
-	background: #318aac;
-	border: 2px solid;
-	border-color: #318aac;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 0.3em 1em;
+    background: #318aac;
+    border: 2px solid;
+}
+
+.text{
+    font-size: 20px;
+}
+
+.boton{
+    height: 80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input:focus{
+    outline: 3px solid #318aac; 
 }
 
 
-.archivo{
-	margin-left: 5%;
-	font-weight: bold;
-	color: #175462;
-	font-size: 16px;
+.box h3{
+    margin-top: 10%;
+    color: #318aac;
+    font-size: 35px;
+    font-family: 'Zen Maru Gothic', sans-serif;;
+
+}
+/*-----------------------------CONTENIDO---------------------------------*/
+
+
+/*--------------------------------------------------*/
+
+
+/*Clases para usar en JS*/
+.bodyMove{
+    margin-left: 250px !important;
 }
 
-.nota{
-	margin-top: 4%;
-	margin-left: 5%;
-	color: #D61818;
-	font-size: 20px;
-	font-weight: bold;
-	font-family: sans-serif;
+.menuSideMove{
+    width: 250px !important;
 }
 
+@media screen and (max-width: 760px){
+    .bodyMove{
+        margin-left: 0px !important;
+    }
 
-.input{
-	width: 100%;
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-top: 2%;
-	margin-bottom: 4%;
-	color: #175462;
-	font-size: 25px;
-	border: 3px solid #40A4BB;
-   	font-family: 'Open Sans Condensed', sans-serif;
-   	color: #175462;
-}		
-/******************************/
+    .menuSideMove{
+        width: 80px !important;
+        left: -80px!important;
+    }
+}
+
+/*-------------responsive del contenido-------------------*/
+
+@media screen and (max-width: 700px){
+    ul.tabs li{
+        width: none !important;
+        flex-basis: 0 !important;
+        flex-grow: 1!important;
+    }
+}
+
+@media screen and (max-width: 450px){
+    ul.tabs li a{
+        padding: 15px 0px !important;
+    }
+
+    ul.tabs li a .tab-text{
+        display: none !important;
+    }
+
+    .secciones article{
+        padding: 20px !important;
+    }
+}
