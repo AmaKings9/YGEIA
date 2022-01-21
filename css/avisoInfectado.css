@@ -1,144 +1,221 @@
 *{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    font-family: 'Open Sans Condensed', sans-serif; 
 }
 
-	/*Encabezado*/
-.header{
-	width: 100%;
-	height: 100px;
-	position: fixed;
-	top: 0;left: 0;
-	background: #4DC1DC;
-	display: inline;
-	z-index: 100000;
-}
-.container{
-	width: 90%;
-	max-width: 1200px;
-	margin: auto;
-}
-.container .btnMenu, .logo{
-	float: left;
-	line-height:100px;
-	z-index: 10000;
-}
-.logo h1{
-	color: #fff;
-	font-weight: 100;
-	font-size: 22px;
-	margin-left: 10%;
-	font-family: 'Zen Maru Gothic', sans-serif;
-	display: inline-block;
-}
-.barra h2{
-	color: #ffffff;
-	font-family: 'Releway', sans-serif;
-	margin-left: -125%;
-}
-.barra{
-	float: right;
-	line-height: 100px;
-}
-.barra a{
-	display: inline-block;
-	padding: 15px;
-	line-height: normal;
-	text-decoration: none;
-	color: #ffffff;
-	transition: all 0.3s ease;
-	border-bottom: 2px solid transparent;
-	font-size: 15px;
-	margin-right: 5px;
-}
-.barra a:hover{
-	border-bottom: 2px solid #c7c7c7;
-	padding-bottom: 5px;
+h4{
+    font-family: 'Raleway', sans-serif;
 }
 
-a{
-	text-decoration: none;
-}
-	/**********************/
-	
-
-	/*Lateral*/
-#btnMenu{
-	display: none;
-	background: #4DC1DC;
-}
-.containerMenu{
-	position: absolute;
-	top: 0;left: 0;
-	transition: all 500ms ease;
-}
-.contMenu{
-	position: fixed;
-	width: 130%;
-	max-width: 250px;
-	background: #175462;
-	height: 100%;
-}
-.contMenu{
-	transform: translateY(15%);
-	padding-top: 2%;
-}
-.contMenu a{
-	display: block;
-	text-decoration: none;
-	padding: 30px;
-	color: #c7c7c7;
-	border-left: 5px solid transparent;
-	transition: all 400ms ease;
-}
-.contMenu a:hover{
-	border-left: 5px solid #1892AD;
-	background: #0F414C;
-}
-	#iUno{
-	margin-left: 22%;
-}
-	#i{
-	margin-left:40%;
+.nameMenu{
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 50px;
 }
 
-	/**************************/
-
-
-	/*Párrafo de advertencia*/
-
-.advertencia{
-	margin-left: 20%;
-	margin-right: 8%;
+body{
+    margin-left: 80px !important;
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86) !important;
 }
 
-.advertencia p{
-	color: #1892AD;
-	font-size: 30px;
-	margin-left: 10%;
+header{
+    width: 100% !important;
+    height: 80px !important;
+    background: #4dc1dc;
+    display: flex !important;
+    align-items: center !important;
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 200 !important;
 }
 
-.advertencia .pUno{
-	padding-bottom: 5%;
+.iconMenu{
+    width: 50px;
+    height: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(10px)!important;
 }
 
-.advertencia .nota{
-	color: #D61818;
-	font-size: 20px;
-	font-weight: bold;
-	font-family: sans-serif;
+.iconMenu i{
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+}
 
+.menuSide{
+    width: 80px !important;
+    height: 100% !important;
+    background: #175462;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 20px;
+    z-index: 300 !important;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 20px solid #175462;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/*Ocultar scroll para chrome, safari y opera*/
+.menuSide::-webkit-scrollbar{
+    display: none;
+}
+/*Ocultar scroll para IE, Firefox y Edge*/
+.menuSide{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.namePage{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    margin-top: 0px;
+}
+
+.namePage i{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.optionsMenu{
+    margin-top: 20px !important;
+    padding: 20px 30px !important;
+    position: absolute !important;
+    top: 80px !important;
+}
+
+.optionsMenu a{
+    color: #ffffffb2;
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+}
+
+.optionsMenu a:hover{
+    color: white;
+}
+
+.optionsMenu .option{
+    padding: 50px 0px !important;
+    display: flex !important;
+    align-items: center !important;
+    position: relative !important;
+}
+
+.optionsMenu .option i{
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.optionsMenu .option h4{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+a.selected{
+    color: white !important;
+}
+
+.selected:before{
+    content: '';
+    width: 3px;
+    height: 40%;
+    background: white;
+    position: absolute;
+    margin-top: 27px;
+    top: 10%;
+    left: -30px;
+}
+
+
+/*--------------------------------------------------*/
+
+
+/*Clases para usar en JS*/
+.bodyMove{
+    margin-left: 250px !important;
+}
+
+.menuSideMove{
+    width: 250px !important;
+}
+
+@media screen and (max-width: 760px){
+    .bodyMove{
+        margin-left: 0px !important;
+    }
+
+    .menuSideMove{
+        width: 80px !important;
+        left: -80px!important;
+    }
+}
+
+/*-------------responsive del contenido-------------------*/
+
+@media screen and (max-width: 700px){
+    ul.tabs li{
+        width: none !important;
+        flex-basis: 0 !important;
+        flex-grow: 1!important;
+    }
+}
+
+@media screen and (max-width: 450px){
+    ul.tabs li a{
+        padding: 15px 0px !important;
+    }
+
+    ul.tabs li a .tab-text{
+        display: none !important;
+    }
+
+    .secciones article{
+        padding: 20px !important;
+    }
+}
+
+
+
+
+/*------------------------CONTENIDO-------------------------------------*/
+.box{
+    height: 160px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton{
+    height: 80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.imgIcon{
+    height: 170px;
+    width: auto;
 }
 
 .advertencia button{
-	margin-left: 45%;
-	font-family: 'Releway', sans-serif; 
-	color: #318aac !important;
-    font-size: 20px;
+    font-family: 'Releway', sans-serif; 
+    color: #318aac !important;
+    font-size: 19px;
     font-weight: 500;
-    padding: 0.5em 1.2em;
+    padding: 0.3em 1em;
     background: rgba(0,0,0,0);
     border: 2px solid;
     border-color: #318aac;
@@ -148,21 +225,28 @@ a{
 }
 
 .advertencia button:hover{
-	color: rgba(255, 255, 255, 0.9) !important;
-	font-size: 20px;
-	font-weight: 500;
-	padding: 0.5em 1.2em;
-	background: #318aac;
-	border: 2px solid;
-	border-color: #318aac;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: #318aac;
+    border: 2px solid;
 }
 
-	/**************************/
-
-	/*ícono*/
-img{
-	width: 10%;
-	margin-left: 55%;
-	margin-top: 150px;
+.advertencia .pUno{
+    padding-bottom: 2%;
+    padding-top: 3%;
+    color: #318aac;
+    font-size: 27px;
 }
-/*************************/
+ .nota{
+    padding-top: 2%;
+    color: #DB1919;
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+.container{
+    width: 900px !important;
+    margin: 10%;
+}
