@@ -112,6 +112,7 @@ function agregarNotiAdmin(name, lastName1, lastName2, day, month, year){
     <h4 class="textNotifi">Has recibido un formulario de infectado</h4>
     <h4 class="textName">Enviado por: <br /> `+ name + ` ` +lastName1 + ` ` + lastName2 + `</h4>
     <h4 class="textDate">Fecha: `+ day +`/`+ month +`/`+ year +`</h4>
+    <a href="#"><i class="fas fa-plus-circle plusIcon"></i></a>
     <i class="fas fa-trash-alt trashIconName"></i>
     </div>` ;
     document.getElementById("notificacion").appendChild(elemento);
