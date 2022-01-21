@@ -34,7 +34,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway:wght@900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
        <!------------------------------------------------------------------>
     </head>
-    <body>
+    <body id="body">
         <header>
         <div class="iconMenu">
             <i class="fas fa-bars" id="btnOpen"></i>
@@ -50,21 +50,21 @@
 
             <div class="optionsMenu">
 
-                <a href="#">
+                <a href="./principalT.html">
                     <div class="option">
                         <i class="fas fa-home" title="Inicio"></i>
                         <h4>Inicio</h4>
                     </div>
                 </a>
 
-                <a href="#" class="selected">
+                <a href="./notificacionesF.html" class="selected">
                     <div class="option">
                          <i class="fas fa-envelope" title="Notificaciones"></i>
                         <h4>Notificaciones</h4>
                     </div>
                 </a>
 
-                <a href="#">
+                <a href="./avisoInfectado.html">
                     <div class="option">
                         <i class="fas fa-exclamation-triangle" title="Aviso de infectado"></i>
                         <h4>Aviso de infectado</h4>
