@@ -205,9 +205,17 @@ h3{
     cursor: pointer;
 }
 
-.trashIcon:hover{
+.trashIcon:hover, .trashIconName:hover, .plusIcon:hover{
     font-size: 55px;
     transition: all 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.trashIconName{
+    font-size: 50px;
+    color:#fbb593;
+    margin-left: 70px;
+    transform: translateX(-10px);
+    cursor: pointer;
 }
 
 .textNotifi{
@@ -224,7 +232,14 @@ h3{
 .textDate{
     font-family: 'Zen Maru Gothic', sans-serif;
     font-size: 20px;
-    margin-left: 50px;
+    margin-left: 30px;
+}
+
+.textName{
+    width: 35%;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 20px;
+    margin-left: 30px;
 }
 
 /*--------------------------------------------------*/
