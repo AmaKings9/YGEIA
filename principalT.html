@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>YGEIA</title>
 
     <!---------------------------FUENTES-------------------------------->
@@ -25,6 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway:wght@900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
    <!------------------------------------------------------------------>
 </head>
+
 <body>
     <header>
         <nav class="nav">
@@ -33,24 +34,115 @@
                 <i class="fas fa-bell logo"></i>
             </div>
             <ul class="menu">
-                <li><a href="/principalT.html">Principal</a></li>
-                <li><a href="/avisoInfectado.html">Aviso de infectado</a></li>
-                <li><a href="/notificacionesF.html">Notificaciones</a></li>
+                <li><a href="./principalT.html">Principal</a></li>
+                <li><a href="./avisoInfectado.html">Aviso de infectado</a></li>
+                <li><a href="./notificacionesF.html">Notificaciones</a></li>
             </ul>
         </nav>
         </header>
 
-        <main id="main" class="main">
-            <div class="left">
-                <div>
-                    <h1>Y G E I A</h1>
-                    <p>ES UNA APLICACIÓN QUE LE PERMITE AL CECYT 9 LLEVAR UN REGISTRO DE LAS PERSONAS QUE ENTRAN A SUS INSTALACIONES Y NOTIFICARLE EN CASO DE HABER PERMANECIDO EN CONTACTO CON ALGÚN INFECTADO DE COVID 19.</p>
+        <div class="fondo">
+            <div class="mainFondo">
+                <div class="left">
+                    <div>
+                        <h1>Y G E I A</h1>
+                        <p>ES UNA APLICACIÓN QUE LE PERMITE AL CECYT 9 LLEVAR UN REGISTRO DE LAS PERSONAS QUE ENTRAN A SUS INSTALACIONES Y NOTIFICARLE EN CASO DE HABER PERMANECIDO EN CONTACTO CON ALGÚN INFECTADO DE COVID 19.</p>
+                    </div>
                 </div>
+                <div class="right"> </div>
+            </div>
+        </div>
+        
+        <div class="infoCovid">
+
+            <div class="targetaInfoCovid">
+                <h3 class="titiloInfoCovid">¿Que es el COVID-19?</h3>
+                <p class="textoInfoCovid">El coronavirus SARS-Cov-2 es un virus que apareció en China. Después se extendió a todos los continentes del mundo provocando una pandemia. Actualmente Europa y América son los más afectados. <br>
+                Este nuevo virus, provoca la enfermedad conocida con el nombre de COVID-19.</p>
+                <img class="imgCuadroInfoCovid" src="assets/img/COVID-19.png" alt="">
             </div>
 
-            <div class="right"> </div>  
+            <div class="targetaInfoCovid">
+                <h3 class="titiloInfoCovid">¿Cuáles son los síntomas?</h3>
+                <p class="textoInfoCovid">
+                    Las personas con COVID-19 tienen los siguientes signos y síntomas:
+                </p>
+                <ul class="textoInfoCovid">
+                    <li>Tos y/o fiebre y/o dolor de cabeza.</li>
+                    <li>Y se acompaña de al menos uno de los siguientes: dolor o ardor de garganta, ojos rojos, dolores en músculos o articulaciones (malestar general).</li>
+                    <li>Los casos más graves tienen dificultades para respirar o falta de aire en sus pulmones.</li>
+                </ul>
+                <img class="imgRectanInfoCovid" src="assets/img/SintomasCovid.png" alt="">
+            </div>
 
-    <script src="https://kit.fontawesome.com/f1fe361482.js" crossorigin="anonymous"></script>
-    <script src="/js/index.js"></script>
+            <div class="targetaInfoCovid">
+                <h3 class="titiloInfoCovid">¿Qué hago si tengo síntomas?</h3>
+                <p class="textoInfoCovid">
+                    Si presentas estos síntomas, puedes llamar a los siguientes teléfonos:<b> 800 0044 800 o al 55 56 58 11 11.<br></b> 
+                    Por favor, considera que, si tienes esos síntomas, no necesariamente tienes COVID-19, podría ser sólo gripa, la mayoría de las personas que se contagien no desarrollarán la enfermedad y mejorarán por sí mismas pero aún así pueden transmitir el virus a las demás. Cuidarnos es también cuidar a las demás personas por eso debes llamar a los teléfonos anteriores, para que te puedan brindar más información sobre qué puedes hacer.
+                </p>
+                <img class="imgCuadroInfoCovid" src="assets/img/Quédate en casa.png" alt="">
+            </div>
+
+            <div class="targetaInfoCovid">
+                <h3 class="titiloInfoCovid">
+                    ¿Cómo puedo prevenir el COVID-19?
+                </h3>
+                <p class="textoInfoCovid">
+                    Hay cosas que puedes hacer para evitar el contagio del COVID-19. Por ejemplo:
+                </p>
+                <ul class="textoInfoCovid">
+                    <li>Lavar las manos con jabón durante al menos 20 segundos.</li>
+                    <li>No tocar tus ojos, nariz o boca si tus manos no están limpias.</li>
+                    <li>Cuando tosas o estornudes, tapa la nariz y la boca con el brazo o un pañuelo desechable, que deberá ser inmediatamente colocado en la basura en una bolsa de plástico.</li>
+                    <li>Mantener una sana distancia con las demás personas.</li>
+                </ul>
+                <img class="imgRectanInfoCovid" src="assets/img/Prevencion.png" alt="">
+            </div>
+
+            <div class="targetaInfoCovid">
+                <h3 class="titiloInfoCovid">Semaforo De Riesgo México</h3>
+                <img class="mapaSemaforo" src="assets/img/Semaforo.png" alt="">
+            </div>
+
+            <div class="targetaInfoCovid">
+                <h3 class="titiloInfoCovid">Casos Totales En El Mundo</h3>
+                <iframe class="casosTotalesMapa" src="https://public.domo.com/cards/dG1jy" frameborder="0"></iframe>
+            </div>
+
+            <div class="targetaInfoCovid">
+                <h3 class="tituloLinkInfo">Si deseas ver mas graficas da clic en la siguiente imagen</h3>
+                <i class="fas fa-arrow-circle-down flechaAbajo"></i>
+                <a href="https://covid19.sinave.gob.mx/Log.aspx"><img class="gobMex" src="assets/img/gobMex.jpg" alt=""></a>
+            </div>
+
+        </div>
+        <div class="footerAnimado">
+            <footer>
+                <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                    <div class="wave" id="wave2"></div>
+                    <div class="wave" id="wave3"></div>
+                    <div class="wave" id="wave4"></div>
+                </div>
+
+                <ul class="social_icon">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fas fa-jedi"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+
+                <ul class="menu2">
+                    <li><a href="./netlight.html">Home</a></li>
+                    <li><a href="./netlight.html">About</a></li>
+                    <li><a href="./netlight.html">Services</a></li>
+                    <li><a href="./netlight.html">Contac</a></li>
+                </ul>
+                <p> Al usar este sitio, usted acepta nuestros términos de uso y nuestra política de privacidad. </p>
+            </footer>
+        </div>
+
+        <script src="https://kit.fontawesome.com/f1fe361482.js" crossorigin="anonymous"></script>
 </body>
 </html>
